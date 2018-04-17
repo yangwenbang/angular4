@@ -1,0 +1,9 @@
+<main>
+  <img src="assets/images/angular.png">
+  
+  <h1>Example</h1>
+  <a *ngFor="let link of exampleLinks" [routerLink]="[link.path]"  routerLinkActive="active" class="btn btn-primary btn-lg">{{link.text}}</a>
+
+  <h1>Component</h1>
+  <a *ngFor="let link of componentLinks" [routerLink]="[link.path]"  routerLinkActive="active" class="btn btn-primary btn-lg">{{link.text}}</a>
+</main>

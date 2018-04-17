@@ -1,0 +1,15 @@
+.idea
+node_modules
+jspm_packages
+npm-debug.*
+link-checker-results.txt
+*.js.map
+*.mesatata.json
+e2e/**/*.js
+e2e/**/*.js.map
+_test-output
+_temp
+aot
+ngc
+dist
+yarn.lock

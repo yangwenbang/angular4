@@ -1,0 +1,9 @@
+<h2>Demo Pipe</h2>
+
+<h4>内置管道</h4>
+<p>生日时间: {{ birthday | date:"yyyy/MM/dd" }} </p>
+
+<h4>自定义管道</h4>
+<div>power: <input [(ngModel)]="power"></div>
+<div>factor: <input [(ngModel)]="factor"></div>
+<p>指数算法: {{power | exponentialStrength: factor}}</p>

@@ -1,0 +1,1 @@
+export { CollapseModule } from './collapse.module';

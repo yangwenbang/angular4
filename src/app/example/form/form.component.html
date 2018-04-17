@@ -1,0 +1,12 @@
+<div class="col-md-6">
+    <h2>Demo Form: SKU</h2>
+    <form #f="ngForm" (ngSubmit)="onSubmit(f.value)">
+        <div class="form-group">
+            <label for="skuInput">SKU</label>
+            <input type="text" id="skuInput" class="form-control" placeholder="至少4位数" name="sku" 
+            [(ngModel)]="sku" required minlength="4" maxlength="24" #s="ngModel">
+            <div [hidden]="s.valid || s.pristine" class="alert alert-danger">SKU is valid</div>
+        </div>
+        <button type="submit" class="btn btn-default" [disabled]="!f.form.valid">Submit</button>
+    </form>
+</div>
