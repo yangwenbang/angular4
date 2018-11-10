@@ -49,6 +49,7 @@ module.exports = function () {
     
     devServer: {
         port: 3000,
+        disableHostCheck: true
     },
   });
 }

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { HttpService } from '../http/http.service';
 
 @Component({
   selector: 'app-index',
@@ -29,7 +30,7 @@ export class IndexComponent implements OnInit {
     {path: '/modal', text: '模态框'},
     {path: '/pagination', text: '分页'},
   ];
-  constructor() { }
+  constructor(private http: HttpService) { }
 
   ngOnInit() {
   }
